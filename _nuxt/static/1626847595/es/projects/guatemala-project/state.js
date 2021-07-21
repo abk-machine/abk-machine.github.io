@@ -1,0 +1,1 @@
+window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1626847595",layout:"default",error:{statusCode:404,message:"Page not found"},serverRendered:false,routePath:"\u002Fes\u002Fprojects\u002Fguatemala-project",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:null},content:{dbHash:"939168cf"}}};

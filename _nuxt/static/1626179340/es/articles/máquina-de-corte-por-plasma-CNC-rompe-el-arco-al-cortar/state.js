@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1626179340",layout:"default",error:a,serverRendered:true,routePath:"\u002Fes\u002Farticles\u002Fm%C3%A1quina-de-corte-por-plasma-CNC-rompe-el-arco-al-cortar",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"8ccf97bd"}}}}(null));
