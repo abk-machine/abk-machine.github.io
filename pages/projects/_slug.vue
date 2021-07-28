@@ -1,25 +1,14 @@
 <template>
-  <article>
+  <article class="content">
     <SocialHead
       :title="project.title"
       :image="project.image"
     />
-    <section class="top-section">
-      <h1>{{ project.title }}</h1>
-       <!-- AddToAny BEGIN -->
-      <div class="a2a_kit a2a_kit_size_48 a2a_default_style" style="margin: 40px auto -30px;">
-      <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-      <a class="a2a_button_facebook"></a>
-      <a class="a2a_button_twitter"></a>
-      <a class="a2a_button_copy_link"></a>
-      </div>
-      <script async src="https://static.addtoany.com/menu/page.js"></script>
-      <!-- AddToAny END -->
-    </section>
     <section class="article">
-     
+      <!-- AddToAny END -->
       <nuxt-content :document="project" />
       <div class="share-article-bottom">
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
         <p class="title">Share this</p>
         <!-- AddToAny BEGIN -->
         <div class="a2a_kit a2a_kit_size_48 a2a_default_style">

@@ -2,7 +2,7 @@
     <div class="one-headder">
         <div class="container-fluid">
             <div class="row left-indus-icons RWDpagescrollfix">
-                <div class="col-lg-5 col-md-5 col-sm-4 pr-0 icons">
+                <div class="col-lg-5 col-md-5 pr-0 icons">
                     <ul>
                         <li>
                             <h4> {{ $t('followUs') }}</h4>

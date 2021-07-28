@@ -2,7 +2,7 @@
 <div class="content">
     <div class="header-outs" id="header">
         <!-- Slideshow 4 -->
-        <vueper-slides autoplay class="header-slider">
+        <vueper-slides autoplay class="header-slider no-shadow" :fixed-height="true">
             <vueper-slide>
                 <template v-slot:content>
                     <img src="~/assets/images/346a9190d.jpg" alt="">
@@ -132,10 +132,11 @@
                 class="product-slider no-shadow"
                 :visible-slides="3"
                 :slide-ratio="1 / 3"
+                :fixed-height="true"
                 slide-multiple
                 :gap="3"
                 :dragging-distance="200"
-                :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }">
+                :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 }, 600: {visibleSlides: 1, slideMultiple: false} }">
                 <vueper-slide  
                     v-for="product of products"
                     :key="product.title">
@@ -163,45 +164,21 @@
                 <h3>Projects</h3>
             </div>
             <vueper-slides
-                class="no-shadow"
+                class="product-slider no-shadow"
                 :visible-slides="3"
                 :gap="3"
                 :slide-ratio="1 / 3"
+                :fixed-height="true"
                 :dragging-distance="200"
-                :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }">
-                <vueper-slide>
+                :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 }, 600: {visibleSlides: 1, slideMultiple: false} }">
+                <vueper-slide  
+                    v-for="project of projects"
+                    :key="project.title">
                     <template v-slot:content>
-                        <div class="product-list-grid">
-                            <img src="images/bbc843f5d.jpg" />
-                            <h4 class="my-3">Argentina project</h4>
-                            <a href="">Learn More</a>
-                        </div>
-                    </template>
-                </vueper-slide>
-                <vueper-slide>
-                    <template v-slot:content>
-                        <div class="product-list-grid">
-                           <img src="images/1588923166965921.jpg" />
-                            <h4 class="my-3">Singapore project</h4>
-                            <a href="">Learn More</a>
-                        </div>
-                    </template>
-                </vueper-slide>
-                <vueper-slide>
-                    <template v-slot:content>
-                        <div class="product-list-grid">
-                            <img src="images/d408156ed.jpg" />
-                            <h4 class="my-3">Chile project</h4>
-                            <a href="">Learn More</a>
-                        </div>
-                    </template>
-                </vueper-slide>
-                <vueper-slide>
-                    <template v-slot:content>
-                        <div class="product-list-grid">
-                            <img src="images/73ca9a31d.jpg" />
-                            <h4 class="my-3">Guatemala project</h4>
-                            <a href="">Learn More</a>
+                        <div class="product-slider-item">
+                            <img :src="project.image" />
+                            <h4 class="my-3">{{project.title}}</h4>
+                            <nuxt-link :to="localePath('/projects')">Learn More</nuxt-link>
                         </div>
                     </template>
                 </vueper-slide>
@@ -238,7 +215,7 @@
         </div>    
     </section>
     <!--Articles -->
-    <!--CTA-->
+    <!--CTA
     <PageCTA>
         <h6>Subscribe to us</h6>
         <form action="#" method="post">
@@ -250,7 +227,7 @@
             </div>
         </form>
     </PageCTA>
-    <!--CTA-->
+    CTA-->
 </div>
 </template>
 <script>

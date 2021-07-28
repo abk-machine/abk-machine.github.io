@@ -5,11 +5,12 @@
                 <!--//navigation section -->
                 <nav class="navbar navbar-expand-lg navbar-light pagescrollfix">
                     <div class="hedder-up">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+                        <a class="navbar-brand" href="index.html"><img src="~/assets/images/logo.png"></a>
                     </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <input type="checkbox" id="navbar-menu-toggle" />
+                    <label for="navbar-menu-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </label>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav ">
                             <li class="nav-item">

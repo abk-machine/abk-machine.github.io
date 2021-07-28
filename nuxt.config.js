@@ -2,6 +2,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  server: {
+    port: 60368
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'abk-machine',
@@ -139,7 +143,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    //transpile: ['swiper']
+    publicPath: 'https://abk-machine.github.io',
     extend(config) {
       config.resolve.alias['vue'] = 'vue/dist/vue.common'
     }

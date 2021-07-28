@@ -85,14 +85,14 @@ color: #fff;
 }
 .agile-email-call ul li p a,.agile-email-call ul li p,
 .info-sub-w3 p,.arrow ul li p,.fun-facts p,
-.news-agile-text p,.product-list-grid a,.team-list-info p
+.news-agile-text p,.product-slider-item a,.team-list-info p
 ,.desk p,.abut-inner-wls-head p,.service-icon-list p,.footer_grid_left p{
 font-size: 14px;
 color: #fff;
 line-height: 28px;
 }
 .info-sub-w3 p,.arrow ul li p,.fun-facts p,
-.news-agile-text p,.product-list-grid a,.team-list-info p,.desk p,
+.news-agile-text p,.product-slider-item a,.team-list-info p,.desk p,
 .abut-inner-wls-head p,.service-icon-list p,.footer_grid_left p,.footer_grid_left p a{color:#000;}
 .icons ul li h4,.agile-email-call ul li h4{
 color: #fff;
@@ -227,11 +227,14 @@ nav.navbar.shrink .navbar-toggler {
 transition: all 1.5s ease;
 }
 
+.header-slider{
+    height: 540px;
+}
 .header-slider-text {
     display: inline-block;
     position:absolute;
     left:5%;
-    margin: -40px 40px;
+    margin: 90px 40px;
     z-index: 10;
 }
 .header-slider-text h5 {
@@ -252,6 +255,10 @@ transition: all 1.5s ease;
     line-height: 27px;
     font-weight: 300;
     letter-spacing: 0px;
+}
+
+.product-slider{
+    height: 360px;
 }
 
 /*-- inner-banner --*/ 
@@ -383,7 +390,7 @@ line-height: 170px;
 height: 171px;
 border-radius: 50%;
 }
-.product-list-grid:hover  span{color:#fff;}
+.product-slider-item:hover  span{color:#fff;}
 /*--Services-inner--*/
 .service-inner{
 background: url(~assets/images/b2.jpg)no-repeat 0px 0px;
@@ -423,7 +430,7 @@ background:rgba(255, 255, 255, 0.7);
 /*--Services-inner--*/
 /*--//Services--*/
 /*--blog--*/
-.blog-slider-wls h4 a,.product-list-grid h4,.ser-list-w3layouts h4
+.blog-slider-wls h4 a,.product-slider-item h4,.ser-list-w3layouts h4
 ,.abut-inner-wls-head h4 {
 color: #d50302;
 font-size: 22px;
@@ -781,9 +788,6 @@ filter: alpha(opacity=0);
 .slider-img {
 min-height: 680px;
 }	
-.header-slider-text {
-padding: 7em 0 0;
-}
 .callbacks_tabs {
 bottom: 140px;
 left: 21%;
@@ -883,9 +887,6 @@ min-height: 600px;
 .header-slider-text h5 {
 font-size: 46px;
 }
-.header-slider-text {
-padding: 5em 0 0;
-}
 .callbacks img {
     width: auto;
 }
@@ -945,6 +946,9 @@ font-size: 30px;
 }
 }
 @media(max-width:991px){
+.header-slider{
+    height: 440px;
+}
 .header-slider-text h5 {
 width: 68%;
 }
@@ -960,9 +964,9 @@ padding: 13px 0px;
 padding: 12px 15px;
 }
 .navbar-light .navbar-toggler {
-border-color: rgb(0, 0, 0);
-background:#d40000;
-padding: 2px 6px;
+border-color: rgb(7,51,212);;
+background:rgb(7,51,212);
+padding: 2px 6px 4px;
 margin-top: 0px;
 outline: none;
 margin-right: 0px;
@@ -976,6 +980,7 @@ transition: 0.5s all;
 }
 .navbar-light .navbar-toggler:hover {
 background: #fff;
+color: black;
 }
 .agile-abt-info,.news-agile-text {
 margin-top: 32px;
@@ -1070,7 +1075,7 @@ font-size: 2.5em;
 .carousel-control-prev {
 left: -16px;
 }
-.blog-slider-wls h4 a, .product-list-grid h4,
+.blog-slider-wls h4 a, .product-slider-item h4,
 .ser-list-w3layouts h4, .abut-inner-wls-head h4 {
 font-size: 21px;
 }
@@ -1112,7 +1117,7 @@ font-size: 27px;
 .serv-w3l-grid span {
 width: 38%;
 }
-.product-list-grid:nth-child(3){
+.product-slider-item:nth-child(3){
 margin-top: 18px;
 }
 .team-hover {
@@ -1161,7 +1166,7 @@ margin-top: 15px;
 .funt-agile-grids h6 {
 font-size: 3em;
 }
-.blog-slider-wls h4 a, .product-list-grid h4, .ser-list-w3layouts h4, .abut-inner-wls-head h4 {
+.blog-slider-wls h4 a, .product-slider-item h4, .ser-list-w3layouts h4, .abut-inner-wls-head h4 {
 font-size: 20px;
 }
 .fun-hedder-up h2,.fun-hedder-up h6 {
@@ -1211,9 +1216,6 @@ bottom: 66px;
 .header-slider-text h5 {
 font-size: 38px;
 }
-.header-slider-text {
-padding: 16em 0 0;
-}
 .funt-agile-grids h6 {
 font-size: 2.5em;
 }
@@ -1237,6 +1239,13 @@ height: 20em;
 }
 }
 @media(max-width:600px){
+.agile-email-call ul li {
+display: block;
+}
+.agile-email-call,.icons {
+text-align: center;
+}
+.icons{margin-bottom:10px;}
 h1 a.navbar-brand {
 font-size: 28px;
 }
@@ -1263,13 +1272,6 @@ margin-top: 24px;
 }
 }
 @media(max-width:568px){
-.agile-email-call ul li {
-display: block;
-}
-.agile-email-call,.icons {
-text-align: center;
-}
-.icons{margin-bottom:10px;}
 .header-slider-text p {
 padding-right: 2em;
 }
@@ -1279,11 +1281,8 @@ font-size: 35px;
 .slider-img {
 min-height: 562px;
 }
-.header-slider-text {
-padding:16em 0 0;
-}
-.callbacks_tabs {
-bottom: 56px;
+.product-slider{
+    height: 420px;
 }
 .serv-w3l-grid span {
 width: 17%;
@@ -1294,7 +1293,7 @@ right: -1px;
 .carousel-control-prev {
 left: 1px;
 }
-.product-list-grid:nth-child(2) {
+.product-slider-item:nth-child(2) {
 margin-top: 20px;
 }
 .team-list-team {
@@ -1352,7 +1351,7 @@ footer p {
 line-height: 28px;
 }
 .header-slider-text h5 {
-font-size: 32px;
+font-size: 28px;
 }
 .header-slider-text p {
 font-size: 14px;
@@ -1396,7 +1395,6 @@ width: 93%;
 font-size: 30px;
 }
 .header-slider-text {
-padding: 2em 0 0;
 }
 .callbacks_tabs a:after {
 width: 15px;
@@ -1509,7 +1507,7 @@ font-size: 23px;
     background: rgb(7,51,212);
     color: white;
 }
-.product-list-grid img{
+.product-slider-item img{
     width: 100%;
 }
 .subscribe-form{
@@ -1561,7 +1559,7 @@ font-size: 23px;
 }
 
 
-#lang-select-toggle{
+#lang-select-toggle, #navbar-menu-toggle{
     display:none;
 }
 #lang-selector{
@@ -1609,6 +1607,10 @@ font-size: 23px;
     height:calc(40px * 2);
 }
 
+#navbar-menu-toggle:checked ~ .navbar-collapse{
+    display: block;
+}
+
 .agile-abt-info .nuxt-content p{
     font-size: 16px;
     line-height: 28px;
@@ -1631,6 +1633,9 @@ font-size: 23px;
     font-size: 20px;
     margin-right: 10px;
 }
-.product-slider-item img{
-    width: 100%;
+
+.vueperslides__arrows--outside .vueperslides__arrow--next, .vueperslides__arrows--outside .vueperslides__arrow--prev {
+    right: auto;
+    left: -3.5em;
+    top: 35%;
 }
